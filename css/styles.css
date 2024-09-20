@@ -1,0 +1,122 @@
+/* Definições gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #00DBDE;
+    background-image: linear-gradient(135deg, #00DBDE 0%, #FC00FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    margin-top: 150px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.95); /* Com transparência */
+    border-radius: 15px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    width: 360px;
+    height: 520px; /* Aumenta a altura do card */
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.img-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    margin: 0 auto;
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.card-content p {
+    color: #000; /* Altera a cor do texto para preto */
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.social-buttons {
+    margin-top: 50px; /* Ajusta os botões mais para baixo */
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #AA076B 0%, #61045F 51%, #AA076B 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* Efeito gradiente ao hover */
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Animação de suavidade */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
